@@ -13,5 +13,10 @@ export default {
             count: 0
         }
     },
-    template: '<div @click="count++">count is {{count}}</div>'
+    methods:{
+        add(){
+            this.count++;
+        }
+    },
+    template: '<div @click="add()">count is {{count}}</div>'
 }
